@@ -41,8 +41,8 @@ export default class Board extends Component {
     this.state = { isScrolling: false };
   }
 
-  componentWillMount() {
-    this.props.getLists(10);
+  componentDidMount() {
+    this.props.getLists(5);
   }
 
   startScrolling(direction) {
