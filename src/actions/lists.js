@@ -28,7 +28,7 @@ export function getLists(quantity) {
         }
         lists.push({
           id: i,
-          name: faker. TASK_STATES[i],
+          name: TASK_STATES[i],
           cards
         });
       }
