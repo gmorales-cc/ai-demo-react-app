@@ -6,6 +6,8 @@ export const MOVE_CARD = 'MOVE_CARD';
 export const MOVE_LIST = 'MOVE_LIST';
 export const TOGGLE_DRAGGING = 'TOGGLE_DRAGGING';
 
+const TASK_STATES = ['Defined','Assigned', 'In Progress','In Revision', 'Completed','Blocked'];
+
 export function getLists(quantity) {
   return dispatch => {
     dispatch({ type: GET_LISTS_START, quantity });
@@ -26,7 +28,7 @@ export function getLists(quantity) {
         }
         lists.push({
           id: i,
-          name: faker.commerce.productName(),
+          name: faker. TASK_STATES[i],
           cards
         });
       }
