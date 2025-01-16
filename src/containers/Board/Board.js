@@ -41,7 +41,7 @@ export default class Board extends Component {
     this.state = { isScrolling: false };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.props.getLists(5);
   }
 
